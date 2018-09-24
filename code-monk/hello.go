@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	L "./utils"
+)
 
 func main() {
-	fmt.Println("Hello World.")
+	L.ReadFromStdin()
 }
