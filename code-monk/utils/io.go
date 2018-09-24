@@ -12,14 +12,16 @@ ReadFromStdin This function reads data from STDIN and prints to the STDOUT
 */
 func ReadFromStdin() {
 	var i int
-	fmt.Println("Print an integer to be scanned")
-	_, err := fmt.Scanf("%d", &i)
+	var x string
+	fmt.Println("Print an integer to be scanned, then after enter Print a text to be scanned:")
+	_, err := fmt.Scanf("%d\n%s", &i, &x)
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	fmt.Println("Integer entered : ", i)
+	fmt.Println("String entered : ", x)
 }
 
 /*
